@@ -21,7 +21,7 @@ if (!user || !org) {
 }
 
 async function main(user, org) {
-    console.log(`Registering user ${user} for ${org}`)
+    logger.info(`Registering user ${user} for ${org}`)
  
     try {
         // load the network configuration
@@ -52,7 +52,6 @@ async function main(user, org) {
         // build a user object for authenticating with the CA
         const provider = wallet.getProviderRegistry().getProvider(adminIdentity.type);
         const adminUser = await provider.getUserContext(adminIdentity, 'admin');
-        logger.info(`An identity for the admin user "admin" already exists in the wallet xxxx`, user);
         // Register the user, enroll the user, and import the new identity into the wallet.
         const secret = await ca.register({
             affiliation: org ,
