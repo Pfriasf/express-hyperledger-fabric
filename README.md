@@ -20,11 +20,35 @@ This repository contains a node.js sdk for for Hyperledger fabric 2.x.
 
 ## Clone the project 📂
 
-```console
-$ git clone "https://github.com/Pfriasf/express-hyperledger-fabric" node-sdk
-$ cd node-sdk
+```bash
+git clone "https://github.com/Pfriasf/express-hyperledger-fabric" express-hyperledger-fabric
+cd express-hyperledger-fabric
 ```
 
+
+### Prerequisites: Creating Identities 🪪
+
+Before running the server, you need to create the necessary identities.
+
+Open a new terminal and run the following commands:
+
+```bash
+cd utils/identity
+node enrollAdmin.js "org1"
+node registerUser.js "appUser" "org1"
+```
+
+Expected result:
+
+```
+express-hyperledger-fabric/
+  ...
+  └── wallet/
+      ├── admin.id
+      └── appUser.id
+  ...
+```
+```
 ## Development 🧑🏻‍💻
 
 Install dependencies 

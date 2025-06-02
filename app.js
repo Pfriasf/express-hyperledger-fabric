@@ -6,6 +6,7 @@ const express = require("express");
 const cors = require("cors");
 
 const logger = require("./helpers/logger")
+const eventHelper = require("./helpers/event-helper");
 logger.category = "server"
 
 const app = express();
@@ -44,3 +45,6 @@ app.listen(port, () => {
   logger.info('****************** SERVER STARTED ************************');
   logger.info('**************  Listening on port: %s  *****************', port);
 });
+
+eventHelper.registerBlockListener();
+eventHelper.registerChaincodeListener();
