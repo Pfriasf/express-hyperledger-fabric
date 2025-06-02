@@ -28,8 +28,8 @@ async function getInteraces(){
     logger.category = 'event-helper-getInterfaces'
     logger.debug('============ Get Fabric interfaces.');
 
-    const org = "org3";
-    const user = "admin3";
+    const org = process.env.ORG1 || 'org1';
+    const user = process.env.USERNAME || 'admin';
     
     let gateway 
     // Create a new gateway for connecting to our peer node.
