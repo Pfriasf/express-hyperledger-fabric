@@ -1,0 +1,565 @@
+{
+	"info": {
+		"_postman_id": "76486024-0454-4d4c-a230-d87821cb017d",
+		"name": "Keepcoding",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12638551"
+	},
+	"item": [
+		{
+			"name": "Root",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4001/api",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"org\": \"org1\",\n  \"user\": \"appUser\",\n  \"channelId\": \"mychannel\",\n  \"contractName\": \"helloContractPrivate\",\n  \"fcn\": \"getAll\",\n  \"args\": []\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/query",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"query"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"org\": \"org1\",\n  \"user\": \"appUser\",\n  \"channelId\": \"mychannel\",\n  \"contractName\": \"helloContract\",\n  \"fcn\": \"get\",\n  \"args\": [\"\",\"064\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/query",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"query"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPrivateData",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"org\": \"org1\",\n  \"user\": \"appUser\",\n  \"channelId\": \"mychannel\",\n  \"contractName\": \"helloContractPrivate\",\n  \"fcn\": \"getPrivateData\",\n  \"args\": [\"\",\"P-002\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/query",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"query"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPrivateData",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"org\": \"org1\",\n  \"user\": \"appUser\",\n  \"channelId\": \"mychannel\",\n  \"contractName\": \"helloContractPrivate\",\n  \"fcn\": \"getAllPrivateAssets\",\n  \"args\": []\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/query",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"query"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAssetHistory",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"org\": \"org1\",\n  \"user\": \"appUser\",\n  \"channelId\": \"mychannel\",\n  \"contractName\": \"helloContract\",\n  \"fcn\": \"getAssetHistory\",\n  \"args\": [\"car\",\"067\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/query",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"query"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByRange",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"org\": \"org1\",\n  \"user\": \"appUser\",\n  \"channelId\": \"mychannel\",\n  \"contractName\": \"helloContract\",\n  \"fcn\": \"getByRange\",\n  \"args\": [\"001\", \"002\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/query",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"query"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPrivateDataByRange",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"org\": \"org1\",\n  \"user\": \"appUser\",\n  \"channelId\": \"mychannel\",\n  \"contractName\": \"helloContractPrivate\",\n  \"fcn\": \"getAllPrivateAssets\",\n  \"args\": []\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/query",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"query"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByType",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"org\": \"org1\",\n  \"user\": \"appUser\",\n  \"channelId\": \"mychannel\",\n  \"contractName\": \"helloContract\",\n  \"fcn\": \"getByType\",\n  \"args\": [\"car\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/query",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"query"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPrivateDataByType",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"org\": \"org1\",\n  \"user\": \"appUser\",\n  \"channelId\": \"mychannel\",\n  \"contractName\": \"helloContractPrivate\",\n  \"fcn\": \"getPrivateAssetByType\",\n  \"args\": [\"car\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/query",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"query"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "queryAsset",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"org\": \"org1\",\n  \"user\": \"appUser\",\n  \"channelId\": \"mychannel\",\n  \"contractName\": \"helloContract\",\n  \"fcn\": \"queryAssets\",\n  \"args\": [\n    {\n        \"selector\": {\n            \"ObjType\": {\n                \"$eq\": \"car\"\n            }\n        }\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/query",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"query"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "queryPrivateAsset",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"org\": \"org1\",\n  \"user\": \"appUser\",\n  \"channelId\": \"mychannel\",\n  \"contractName\": \"helloContractPrivate\",\n  \"fcn\": \"queryPrivateAssets\",\n  \"args\": [\n    {\n        \"selector\": {\n            \"ObjType\": {\n                \"$eq\": \"car\"\n            }\n        }\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/query",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"query"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"org\": \"org1\",\n  \"user\": \"appUser\",\n  \"channelId\": \"mychannel\",\n  \"contractName\": \"helloContract\",\n  \"fcn\": \"create\",\n  \"args\": [\n    \"car\",\n    \"067\",\n   {\n      \"ID\": \"067\",\n      \"Make\": \"Yamaha\",\n      \"Model\": \"MT-08\",\n      \"Color\": \"blue\",\n      \"Year\": 2023,\n      \"Owner\": \"Petes\",\n      \"Price\": 7500,\n      \"ObjType\": \"car\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/invoke",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"invoke"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createPrivateAsset",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"org\": \"org1\",\n  \"user\": \"appUser\",\n  \"channelId\": \"mychannel\",\n  \"contractName\": \"helloContractPrivate\",\n  \"fcn\": \"createPrivateAsset\",\n  \"args\": [\n    \"car\",\n    \"067\",\n   {\n      \"ID\": \"067\",\n      \"Make\": \"Yamaha\",\n      \"Model\": \"MT-08\",\n      \"Color\": \"blue\",\n      \"Year\": 2023,\n      \"Owner\": \"Petes\",\n      \"Price\": 7500,\n      \"ObjType\": \"car\",\n      \"Cost\": 1\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/invoke",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"invoke"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePrivateAsset",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"org\": \"org1\",\n  \"user\": \"appUser\",\n  \"channelId\": \"mychannel\",\n  \"contractName\": \"helloContractPrivate\",\n  \"fcn\": \"deletePrivateData\",\n  \"args\": [\n    \"car\",\n    \"067\"\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/invoke",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"invoke"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePrivateAsset",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"org\": \"org1\",\n  \"user\": \"appUser\",\n  \"channelId\": \"mychannel\",\n  \"contractName\": \"helloContractPrivate\",\n  \"fcn\": \"createPrivateAsset\",\n  \"args\": [\n    \"car\",\n    \"067\",\n   {\n      \"ID\": \"067\",\n      \"Make\": \"Yamaha\",\n      \"Model\": \"MT-08\",\n      \"Color\": \"blue\",\n      \"Year\": 2023,\n      \"Owner\": \"Petes\",\n      \"Price\": 7500,\n      \"ObjType\": \"car\",\n      \"Cost\": 1\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/invoke",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"invoke"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "initPrivateData",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"org\": \"org1\",\n  \"user\": \"appUser\",\n  \"channelId\": \"mychannel\",\n  \"contractName\": \"helloContractPrivate\",\n  \"fcn\": \"InitPrivateData\",\n  \"args\": [\"\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/invoke",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"invoke"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"org\": \"org1\",\n  \"user\": \"appUser\",\n  \"channelId\": \"mychannel\",\n  \"contractName\": \"helloContract\",\n  \"fcn\": \"update\",\n  \"args\": [\n    \"car\",\n    \"067\",\n   {\n      \"ID\": \"067\",\n      \"Make\": \"Yamahas\",\n      \"Model\": \"MT-09\",\n      \"Color\": \"blue\",\n      \"Year\": 2023,\n      \"Owner\": \"Petes\",\n      \"Price\": 7500,\n      \"ObjType\": \"car\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/invoke",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"invoke"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"org\": \"org1\",\n  \"user\": \"appUser\",\n  \"channelId\": \"mychannel\",\n  \"contractName\": \"helloContract\",\n  \"fcn\": \"delete\",\n  \"args\": [\"\",\"005\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/invoke",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"invoke"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
